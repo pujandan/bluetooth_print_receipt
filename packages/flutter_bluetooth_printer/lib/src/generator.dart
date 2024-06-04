@@ -84,7 +84,7 @@ class Generator {
     ];
   }
 
-  List<int> _graphic(img.Image image) {
+  List<int> graphic(img.Image image) {
     final int widthPx = image.width;
     final int heightPx = image.height;
     final int widthBytes = (widthPx + 7) ~/ 8;
@@ -204,7 +204,7 @@ class Generator {
     return src;
   }
 
-  Future<List<int>> _encodeImage(Map<String, dynamic> arg) async {
+  Future<List<int>> encodeImage(Map<String, dynamic> arg) async {
     final dotsPerLine = arg['dotsPerLine'];
     final pngBytes = arg['bytes'];
     final useImageRaster = arg['useImageRaster'];

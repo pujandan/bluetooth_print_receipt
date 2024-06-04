@@ -180,9 +180,9 @@ class ReceiptState extends State<Receipt> {
   }
 }
 
-class _ImagePreviewForDebug extends StatelessWidget {
+class ImagePreviewForDebug extends StatelessWidget {
   final Uint8List bytes;
-  const _ImagePreviewForDebug({
+  const ImagePreviewForDebug({
     super.key,
     required this.bytes,
   });
