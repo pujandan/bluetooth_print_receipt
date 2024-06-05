@@ -1,4 +1,4 @@
-part of flutter_bluetooth_printer_macos;
+part of '../flutter_bluetooth_printer_macos_library.dart';
 
 class CUPSPrinterDriver extends FlutterBluetoothPrinterPlatform {
   static void registerWith() {
@@ -59,7 +59,7 @@ class CUPSPrinterDriver extends FlutterBluetoothPrinterPlatform {
   }
 
   @override
-  Future<BluetoothState> checkState() async  {
+  Future<BluetoothState> checkState() async {
     return BluetoothState.enabled;
   }
 }
